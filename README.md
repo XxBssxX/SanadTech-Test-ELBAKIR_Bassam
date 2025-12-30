@@ -26,33 +26,38 @@ Node.js + Express
 # Data storage: 
 (users.txt)
 
-#     Setup Instructions
+#     Setup Instructions:
 
-1. Clone the repository
-git clone https://github.com/XxBssxX/SanadTech-Test-ELBAKIR_Bassam.git
-cd sanadtech-test
+1. Clone the repository:
 
-2. Backend Setup
-cd backend
-npm install
-node server.js
+- git clone https://github.com/XxBssxX/SanadTech-Test-ELBAKIR_Bassam.git
 
-Test backend:
+- cd sanadtech-test
+
+2. Backend Setup:
+
+- cd backend
+- npm install
+- node server.js
+
+# Test backend:
 http://localhost:5000/users?letter=A&page=1&limit=100
 
-3. Frontend Setup
-cd frontend
-npm install
-npm start
+3. Frontend Setup:
+
+- cd frontend
+- npm install
+- npm start
 
 
-Test frontend: http://localhost:3000
+# Test frontend: 
+http://localhost:3000
 
-#   The steps to test the APP
+#   The steps to test the APP:
 
 1. Open the app in your browser.
 
-# This is what you will see:
+#   This is what you will see:
 
 ![alt text](image.png)   
 
@@ -75,7 +80,7 @@ This application handles large datasets efficiently using a combination of pagin
 
 "The app keeps track of loaded users, current page, and letters with no users."
 
-"Letters with no users immediately show “Not Available”."
+"Letters with no users immediately show “Not Available."
 
 "Additional pages are loaded only if more data exists."
 
@@ -84,6 +89,7 @@ This application handles large datasets efficiently using a combination of pagin
 - Only new users are appended to the list instead of re-rendering the entire dataset.
 
 - Loader and “Not Available” messages are conditionally rendered to improve UX.
+
 
 #   Result: 
 The frontend remains smooth and responsive even for letters with hundreds or thousands of users, making this approach suitable for real-world applications.
