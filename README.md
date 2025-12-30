@@ -1,7 +1,8 @@
-Technical Test - SanadTech 
+#  Technical Test - SanadTech 
 
-Full Name: ELBAKIR Bassam
-SUBJECT(4): QA-Automatisation des tests.
+#  Full Name: ELBAKIR Bassam
+
+#  SUBJECT(4): QA-Automatisation des tests.
 
 
 # Key features:
