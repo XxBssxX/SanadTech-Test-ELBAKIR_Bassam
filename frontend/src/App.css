@@ -1,0 +1,56 @@
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.alphabet-menu {
+  margin-bottom: 20px;
+}
+
+.letter-button {
+  background-color: #f0f0f0;
+  border: none;
+  margin: 3px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.letter-button:hover {
+  background-color: #4caf50;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  background-color: #fafafa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.no-users {
+  color: #ff4d4f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.loader {
+  margin: 20px 0;
+  font-style: italic;
+  color: #888;
+}
