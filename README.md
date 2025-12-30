@@ -1,30 +1,34 @@
-Sanadtech Technical Test – Infinite User List
-Project Description
+Technical Test - SanadTech 
 
-This project is a User Directory application designed to efficiently display a large list of users.
-Users can be filtered alphabetically, and the list supports infinite scrolling to load users on demand.
+Full Name: ELBAKIR Bassam
+SUBJECT(4): QA-Automatisation des tests.
 
-Key features:
 
-Alphabet menu for filtering users by first letter
+# Key features:
 
-Infinite scroll to load users dynamically
+1. Alphabet menu for filtering users by first letter
 
-“Not Available” message for letters with no users
+2. Infinite scroll to load users dynamically
 
-Responsive and lightweight frontend design
+3. “Not Available” message for letters with no users
 
-The project demonstrates efficient handling of large datasets with modern frontend and backend technologies:
+4. Responsive and lightweight frontend design
 
-Frontend: React.js
+# The project demonstrates efficient handling of large datasets with modern frontend and backend technologies:
 
-Backend: Node.js + Express
+# Frontend: 
+React.js
 
-Data storage: Simple text file (users.txt)
+# Backend: 
+Node.js + Express
 
-Setup Instructions
+# Data storage: 
+(users.txt)
+
+#     Setup Instructions
+
 1. Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/XxBssxX/SanadTech-Test-ELBAKIR_Bassam.git
 cd sanadtech-test
 
 2. Backend Setup
@@ -32,54 +36,53 @@ cd backend
 npm install
 node server.js
 
-
-The backend runs at: http://localhost:5000
-
-Test endpoint:
+Test backend:
 http://localhost:5000/users?letter=A&page=1&limit=100
 
 3. Frontend Setup
-cd ../frontend
+cd frontend
 npm install
 npm start
 
 
-The frontend runs at: http://localhost:3000
+Test frontend: http://localhost:3000
 
-Usage
+#   The steps to test the APP
 
-Open the app in your browser.
+1. Open the app in your browser.
 
-Click any alphabet button to filter users by first letter.
+# This is what you will see:
 
-Scroll down to load more users automatically.
+![alt text](image.png)   
 
-If no users exist for a selected letter, “Not Available” will be displayed.
+2. Click any alphabet button to filter users by first letter.
 
-Screenshots
+3. Scroll down to load more users automatically.
 
-(Add your screenshots here later)
+- If no users exist for a selected letter, “Not Available” will be displayed.
 
-Scaling Explanation
+
+#  Explanation of the logic in this app:
 
 This application handles large datasets efficiently using a combination of pagination, infinite scroll, and smart rendering:
 
-Pagination: Users are loaded in small batches (e.g., 100 names per request) to prevent browser freezing.
+1. Pagination: Users are loaded in small batches to prevent browser freezing.
 
-Infinite Scrolling: Additional users are fetched only when the user scrolls to the bottom of the list. This is implemented using an IntersectionObserver, which automatically triggers fetching the next batch.
+2. Infinite Scrolling: Additional users are fetched only when the user scrolls to the bottom of the list. This is implemented using an IntersectionObserver, which automatically triggers fetching the next batch.
 
-Dynamic State Management:
+- Dynamic State Management:
 
-The app keeps track of loaded users, current page, and letters with no users.
+"The app keeps track of loaded users, current page, and letters with no users."
 
-Letters with no users immediately show “Not Available”.
+"Letters with no users immediately show “Not Available”."
 
-Additional pages are loaded only if more data exists.
+"Additional pages are loaded only if more data exists."
 
-Efficient Rendering:
+3. Efficient Rendering:
 
-Only new users are appended to the list instead of re-rendering the entire dataset.
+- Only new users are appended to the list instead of re-rendering the entire dataset.
 
-Loader and “Not Available” messages are conditionally rendered to improve UX.
+- Loader and “Not Available” messages are conditionally rendered to improve UX.
 
-Result: The frontend remains smooth and responsive even for letters with hundreds or thousands of users, making this approach suitable for real-world applications.
+#   Result: 
+The frontend remains smooth and responsive even for letters with hundreds or thousands of users, making this approach suitable for real-world applications.
